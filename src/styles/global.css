@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.masking {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask: url("../images/Union.svg");
+  mask: url("../images/Union.svg");
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: 15%;
+  transition: 2s;
+}
+
+.no-masking {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask: url("../images/Union.svg");
+  mask: url("../images/Union.svg");
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: 200%;
+  transition: 2s;
+}
